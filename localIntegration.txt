@@ -1,0 +1,9 @@
+Node Project Generation
+
+1. npm init 
+2. npm install
+3. npm i express --save
+4. npm i body-parser --save
+5. npm i mysql --save
+6. npm install dotenv --save //for enviroment Veriables 
+7. npm i cors
