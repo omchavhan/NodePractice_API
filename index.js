@@ -1,9 +1,8 @@
 const express = require("express")
 
-
-
 //Create Express App 
 const app = express();
+// use for form data pass beacause form data format is not json
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(express.Router())
@@ -11,6 +10,10 @@ app.use(express.Router())
 //For Web CORS Policy
 var cors = require('cors')
 app.use(cors())
+
+// for Image upload
+const path = require("path");
+app.use(express.static("uploads"))
 
 // Database connect
 const conn = require('./config/db.config')

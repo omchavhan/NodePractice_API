@@ -1,0 +1,8 @@
+# Ignore specific file
+my-file.txt
+
+# Ignore all .log files
+*.log
+
+# Ignore a directory and its contents
+my-directory/
